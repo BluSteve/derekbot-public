@@ -1,0 +1,5 @@
+*.js
+/.idea/
+/derekbot.iml
+/node_modules/
+/src/Token.ts
