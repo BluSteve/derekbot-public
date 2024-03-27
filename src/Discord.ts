@@ -147,20 +147,16 @@ async function main(): Promise<void> {
 			}
 
 			if (message.mentions.users.has(botId)) {
-				if (message.author.id === "796906555076771900" && Math.random() < 0.05) {
-					await message.channel.send("good one cringe god"); // lol
-				} else {
-					if (message.reference?.messageId) { // reply to message exists
-						const ref = await message.channel.messages.fetch(message.reference.messageId);
-						if (ref.author.id !== botId) { // ignore if it's a reply to derekbot himself
-							await derekReply(message, undefined, [ref]);
-							return;
-						} else {
-							await derekReply(message);
-						}
+				if (message.reference?.messageId) { // reply to message exists
+					const ref = await message.channel.messages.fetch(message.reference.messageId);
+					if (ref.author.id !== botId) { // ignore if it's a reply to derekbot himself
+						await derekReply(message, undefined, [ref]);
+						return;
 					} else {
 						await derekReply(message);
 					}
+				} else {
+					await derekReply(message);
 				}
 			}
 		} catch (e) {

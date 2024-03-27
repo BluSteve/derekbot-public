@@ -1,8 +1,23 @@
 # Derek Bot
 
+### *A bot to imitate your friend's texting style with ChatGPT*
+
+![img_1.png](img_1.png)
+
+## Features
+
+1. ✅ Replies when pinged.
+2. ✅ Replies to last message in channel when your friend (i.e. Derek) starts typing.
+3. ✅ Randomly DMs people for added creepiness.
+4. ✅ Reacts to messages randomly. Will sometimes react 🤖 to the real Derek.
+5. ✅ Will never slur.
+
 ## Prerequisites
-1. Have a Discord bot. Go to https://discord.com/developers/applications and create a new application. The Message Content intent needs to be enabled. It also needs to be able to Read Messages/View Channels and Send Messages, at minimum.
-![img.png](img.png)
+
+1. Have a Discord bot. Go to https://discord.com/developers/applications and create a new application. The Message
+   Content intent needs to be enabled. It also needs to be able to Read Messages/View Channels and Send Messages, at
+   minimum.
+   ![img.png](img.png)
 2. Get a ChatGPT API key. Create a ChatGPT account and go to https://platform.openai.com/api-keys.
 
 ## Getting Started
@@ -25,4 +40,4 @@ in `src/Token.ts`.
 
 ## Making Your Custom Bot
 
-Most (but not all) of the Derek specific data can be found in `Examples.ts`.
+Most (but not all) of the Derek specific data can be found in `Examples.ts`. Channel whitelists can be found in the `nogoChannels` and `yesChannels` variables in `Discord.ts`.
