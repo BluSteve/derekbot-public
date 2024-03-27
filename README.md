@@ -41,3 +41,6 @@ in `src/Token.ts`.
 ## Making Your Custom Bot
 
 Most (but not all) of the Derek specific data can be found in `Examples.ts`. Channel whitelists can be found in the `nogoChannels` and `yesChannels` variables in `Discord.ts`.
+
+## Note on ChatGPT Rate Limits
+The default ChatGPT API requests-per-day of 200 can be easily exceeded. To overcome this you need to put in an additional $5 of credits.
